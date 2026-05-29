@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 214 32% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 214 32% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 214 32% 15%;
+
+    --primary: 213 60% 28%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 45 95% 50%;
+    --secondary-foreground: 214 32% 15%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 214 15% 46%;
+
+    --accent: 140 45% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 213 60% 28%;
+
+    --radius: 0.5rem;
+
+    --topbar-bg: 213 60% 22%;
+    --topbar-foreground: 0 0% 100%;
+
+    --hero-overlay: 213 60% 15%;
+
+    --banner-bg: 213 60% 28%;
+    --banner-foreground: 0 0% 100%;
+
+    --font-heading: 'Oswald', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
